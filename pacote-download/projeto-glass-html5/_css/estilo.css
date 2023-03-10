@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: white;
+    background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
 }
 
@@ -40,6 +40,16 @@ figure.foto-legenda:hover figcaption {
     opacity: 1;
 }
 
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1155px;
+    top: 40px ;
+}
+
+header#cabecalho  {
+    position: none;
+}
+
 /*Formatação do Menu*/
 
 nav#menu {
@@ -51,12 +61,36 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    width: 700px;
+    right: 450px;
 }
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
 
 nav#menu li {
     display: inline-block;
     background-color: #dddddd;
-    padding: 10px;
-    margin: 20px;
+    padding: 5px;
+    margin: 10px;
+    transition: background-color 1s;
+}
+
+nav#menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: #fff;
+}
+
+div#interface {
+    width: 800px;
+    background-color: #fff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, .5);
+    padding: 10px 10px 10px 10px;
 }
