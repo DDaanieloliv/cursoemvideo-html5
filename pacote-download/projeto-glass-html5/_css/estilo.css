@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@font-face {
+    font-family: 'fontelogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 
 body {
     background-color: #dddddd;
@@ -42,13 +47,36 @@ figure.foto-legenda:hover figcaption {
 
 header#cabecalho img#icone {
     position: absolute;
-    left: 1155px;
-    top: 40px ;
+    left: 1210px;
+    top: 70px;
+
 }
 
-header#cabecalho  {
-    position: none;
+header#cabecalho {
+    border-bottom: 1px #606060 double;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg" ) no-repeat 0px 80px; 
+    /* Estamos dentro da pasta _css mechendo em un arquivo css e para acessar algo de fora dessa pasta
+     usamos -->  (../"pasta de onde deseja pegar algo/") Os dois pontos servem para voutar uma */
 }
+
+header#cabecalho h1 {
+    font-family: 'fontelogo', sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #888;
+    font-size: 15pt;
+    padding:  0px;
+    margin-top: 0px;
+}
+
 
 /*Formatação do Menu*/
 
@@ -88,9 +116,9 @@ nav#menu a:hover {
 }
 
 div#interface {
-    width: 800px;
+    width: 900px;
     background-color: #fff;
     margin: -20px auto 0px auto;
-    box-shadow: 0px 0px 10px  rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
     padding: 10px 10px 10px 10px;
 }
