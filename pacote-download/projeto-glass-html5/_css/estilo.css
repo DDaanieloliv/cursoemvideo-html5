@@ -146,6 +146,16 @@ footer#rodape p {
     text-align: center;
 }
 
+
+article#noticia-principal h2 {
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px ;
+}
+
+
 table#tabelaspec {
     border: 1px solid #606060;
     border-spacing: 0px;
@@ -184,6 +194,7 @@ table#tabelaspec caption span {
     font-size: 8pt;
     margin-top: 10px;
 }
+
 
 
 
