@@ -8,16 +8,25 @@
     <title>Document</title>
 
     <script>
-        function acendelampada( ) {
-           document.getElementById("luz").src = "_imagens/lampada-acesa.jpg";
-        }
+        var quebrada = false;
 
-        function apagalampada( ) {
-            document.getElementById("luz").src = "_imagens/lampada-apagada.jpg";
-        }
-
-        function quebralampada( ) {
-            document.getElementById("luz").src = "_imagens/lampada-quebrada.jpg"
+        function mudalampada(tipo) {
+            // if (tipo == 1) {
+            //     arquivo = "_imagens/lampada-acesa.jpg";
+            // }
+            // if (tipo == 2) {
+            //     arquivo = "_imagens/lampada-apagada.jpg";
+            // }
+            // if (tipo == 3) {
+            //     arquivo = "_imagens/lampada-quebrada.jpg"
+            // }
+           
+            if (!quebrada) {
+                document.getElementById("luz").src = "_imagens/" + tipo + ".jpg";
+                if (tipo == 'lampada-quebrada') {
+                    quebrada = true;
+                }
+            }
         }
     </script>
 
@@ -27,11 +36,14 @@
 
     <h1>Acenda a lâmpada</h1>
     <script>
-       alert("Bora funcionar?");
-     </script>
-    
-    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendelampada( )" 
-    onmouseout="apagalampada( )" onclick="quebralampada( )"/>
+        alert("Bora funcionar?");
+    </script>
+
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudalampada('lampada-acesa')"
+        onmouseout="mudalampada('lampada-apagada')" onclick="mudalampada('lampada-quebrada')" />
+
+    <!-- Antes os parametros da ações acima eram "onmousemove = "mudalampada(1)"/ onmouseout = "mudalampada(2)"
+    onclick = "mudalampada(3)" " que eram recebidos pelos if's agora comentados, assim os simplificando -->
 
 </body>
 
