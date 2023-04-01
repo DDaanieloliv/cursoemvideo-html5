@@ -20,10 +20,11 @@
             // if (tipo == 3) {
             //     arquivo = "_imagens/lampada-quebrada.jpg"
             // }
-           
+
             if (!quebrada) {
                 document.getElementById("luz").src = "_imagens/" + tipo + ".jpg";
-                if (tipo == 'lampada-quebrada') {
+                    // O + + ao lado do tipo siguinifica cancatenação em js para assim poder juntar uma coisa com a outra.
+                 if (tipo == 'lampada-quebrada') {
                     quebrada = true;
                 }
             }
