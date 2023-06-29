@@ -3,7 +3,9 @@
 @font-face {
     font-family: 'fontelogo';
     src: url("../_fonts/bubblegum-sans-regular.otf");
-}
+}  /* Utilizado para importar fontes e etc... */
+
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
