@@ -244,4 +244,10 @@ header#cabecalho-artigo h3 {
     text-align: right;
 }
 
+video#vd {
+    width: 350px;
+}
 
+video#vd1 {
+    width: 500px;
+}
